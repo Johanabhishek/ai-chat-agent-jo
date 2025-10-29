@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', 'sans-serif';
+  min-height: 100vh;
+}
+
+/* Custom CSS variables for dark and light mode (via Tailwind) */
+@layer base {
+  :root {
+    --background: #fff;
+    --foreground: #111;
+  }
+  .dark {
+    --background: #111;
+    --foreground: #fff;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
