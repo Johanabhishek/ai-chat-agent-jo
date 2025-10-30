@@ -166,7 +166,7 @@ export default function HomePage() {
   const streamedAnswer = useChatStream(lastAIAnswer, streaming);
 
   function handleSend(input: string) {
-    const userMsg = { sender: "user", message: input };
+    const userMsg: ChatMessage = { sender: "user", message: input };
     setMessages((msgs) => [...msgs, userMsg]);
     setLastUserQuestion(input);
     setStreaming(true);
