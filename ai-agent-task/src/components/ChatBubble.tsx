@@ -30,7 +30,7 @@ export default function ChatBubble({
   return (
     <div
       className={cn(
-        "my-4 flex",
+        "my-4 flex fade-in",
         sender === "user" ? "justify-end" : "justify-start"
       )}
       onMouseEnter={() => setShowActions(true)}
@@ -38,7 +38,7 @@ export default function ChatBubble({
     >
       <div
         className={cn(
-          "max-w-2xl rounded-2xl p-5 whitespace-pre-line group relative",
+          "max-w-2xl rounded-2xl p-5 whitespace-pre-line group relative transition-transform duration-150",
           sender === "ai"
             ? "bg-[#22242b] text-white border border-[#1b1c23] shadow-xl"
             : "bg-white text-[#181921] border border-gray-200 shadow"

@@ -102,9 +102,9 @@ export default function PromptBar({
   // --- DESIGN BLOCK ---
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full fade-in">
       <form
-        className="flex gap-3 items-center py-3 px-6 bg-[#16171f] rounded-2xl border border-[#22242a] shadow-lg"
+        className="flex gap-3 items-center py-3 px-6 bg-[#141620]/95 rounded-2xl border border-[#22242a] shadow-lg backdrop-blur supports-[backdrop-filter]:bg-[#141620]/70"
         style={{ margin: "0 auto", maxWidth: "820px" }}
         onSubmit={e => {
           e.preventDefault();

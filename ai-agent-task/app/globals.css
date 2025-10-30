@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 body {
-  background: #000;
   color: #fff;
-  font-family: 'Inter', 'sans-serif';
   min-height: 100vh;
+  /* Subtle radial gradients for depth */
+  background:
+    radial-gradient(1000px 500px at 10% -10%, rgba(79,140,255,0.12), transparent 60%),
+    radial-gradient(1000px 600px at 110% 10%, rgba(111,66,193,0.10), transparent 60%),
+    #0f1117;
 }
 
 /* Custom CSS variables for dark and light mode (via Tailwind) */
@@ -29,3 +32,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Simple fade-in animation utility */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn .28s ease-out both; }
