@@ -59,14 +59,6 @@ globals.css
 - Path aliases set in `tsconfig.json`
 - Update `package.json` for custom scripts or metadata
 
----
-
-## Credits & Inspiration
-
-Based on the UX and interaction models from:
-- [Perplexity AI](https://www.perplexity.ai/)
-- [Anthropic Claude](https://claude.ai/)
-- [OpenAI ChatGPT UI]
 
 ---
 
@@ -77,4 +69,5 @@ Based on the UX and interaction models from:
 ---
 
 *Built with ❤️ by Johanabhishek.*
+
 
