@@ -1,6 +1,5 @@
-# AI Chat Agent
+# AI Chat Agent ( https://ai-chat-agent-jo.vercel.app/)
 
-A **Next.js 13/14 Chat App** inspired by Claude, Perplexity, and modern conversational AI UIs.
 Built with React, TypeScript, and Tailwind CSS.
 
 ---
@@ -78,3 +77,4 @@ Based on the UX and interaction models from:
 ---
 
 *Built with ❤️ by Johanabhishek.*
+
